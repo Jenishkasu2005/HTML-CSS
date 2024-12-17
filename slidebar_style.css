@@ -1,0 +1,121 @@
+*{
+    font-family: 'Rubik Burned', system-ui;
+    margin: 0;
+    padding: 0;
+}
+.main_box{
+    background: url("Photo.jpg");
+    height: 100vh;
+    background-size: cover;
+
+}
+
+
+.btn_one{
+    font-size: 30px;
+    font-weight: 900;
+    position: absolute;
+    line-height: 50px;
+    margin-left: 20px;
+    margin-top: 20px;
+    transition: all 0.4s linear;
+}
+
+.sidebar_menu{
+    position: fixed;
+    left: -350px;
+    height: 100vh;
+    width: 300px;
+    background-color: rgba(255,255,255,0.1);
+    box-shadow: 0 0 8px rgba(255,255,255,0.5);
+    border-radius: 20px;
+    transition: all 0.4s linear;
+}
+
+#check{
+    display: none;
+}
+
+.slidebar_menu ,a,i{
+    text-decoration: none;
+    color: rgba(255,255,255,0.5);
+
+}
+
+.logo{
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.btn_two{
+    position: absolute;
+    margin-left: 275px;
+    margin-top: 10px;
+    font-size: large;
+    
+}
+
+.menu{
+    position:absolute;
+    margin:100px 0 0 0;
+    
+}
+
+.menu li{
+    line-height: 50px;
+    margin-left: px;
+    width: 299px;
+}
+
+.menu a{
+    padding: 20px;
+}
+
+.social_media ul{
+    position: absolute;
+    bottom: 10px;
+    left: 50px;
+
+}
+
+.social_media ul i{
+    padding: 10px;
+}
+
+li:hover{
+    box-shadow: 0 0 4px rgba(255,255,255,0.5);
+    text-shadow: 0 0 5px #87FF2A;
+    color: rgba(255,255,255);
+    transform: scale(1.01);
+}
+
+i,a:hover{
+    color: rgba(255,255,255);
+    scale: 1.1;
+}
+
+#check ~ .sidebar_menu{
+    left: -500px;;
+}
+
+#check:checked ~ .btn_one{
+    opacity: 0;
+}
+
+#check:checked ~ .sidebar_menu{
+    left: 0px;
+}
+
+
+
+
+.btn_one:hover{
+    scale: 1.3;
+}
+
+.menu i{
+    margin-left: 10px;
+}
+
